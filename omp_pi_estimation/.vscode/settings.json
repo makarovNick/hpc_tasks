@@ -1,0 +1,11 @@
+{
+    "files.associations": {
+        "type_traits": "c",
+        "cstdlib": "c",
+        "mm3dnow.h": "c",
+        "limits": "c",
+        "atomic": "c",
+        "random": "c",
+        "mt19937_64.h": "c"
+    }
+}

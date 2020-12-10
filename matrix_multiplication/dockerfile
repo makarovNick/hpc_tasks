@@ -1,0 +1,5 @@
+FROM ubuntu:16.04
+COPY . /
+RUN apt-get update && apt-get install -y make gcc
+RUN make 
+CMD ./mm_benchmark -N 4096 -a 0

@@ -1,0 +1,30 @@
+#!/bin/sh
+#===============================================================================
+# Copyright 2001-2020 Intel Corporation.
+#
+# This software and the related documents are Intel copyrighted  materials,  and
+# your use of  them is  governed by the  express license  under which  they were
+# provided to you (License).  Unless the License provides otherwise, you may not
+# use, modify, copy, publish, distribute,  disclose or transmit this software or
+# the related documents without Intel's prior written permission.
+#
+# This software and the related documents  are provided as  is,  with no express
+# or implied  warranties,  other  than those  that are  expressly stated  in the
+# License.
+#===============================================================================
+
+chmod +x AuthenticAMD
+
+# Preparing environment for maximum performance
+threads=`lscpu | awk '/^Core\(s\) per socket:/ {cores=$NF}; /^Socket\(s\):/ {sockets=$NF}; END{print cores*sockets}'`
+export OMP_NUM_THREADS=$threads
+export OMP_PLACES=CORES
+export OMP_PROC_BIND=TRUE
+export MKL_DYNAMIC=FALSE
+export MKL_DEBUG_CPU_TYPE=5
+
+{
+  ./AuthenticAMD default
+} | tee results.txt
+
+read -p "Press [Enter] key to continue..."

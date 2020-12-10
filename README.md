@@ -1,4 +1,4 @@
-# MADE && Scolcovo HPC course hometasks
+# MADE && Skolkovo HPC course hometasks
 _____
 High-performance computing course hometasks
 

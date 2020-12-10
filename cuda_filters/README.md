@@ -42,9 +42,9 @@ for(int k=-2;k<=2; k++)
 
 Filter Type              |  Original          |      Filtered
 ------------------------:|:------------------:|:-------------------------:
-**Median Filter** on 4k  |![](4k_original.png)|  ![](median_4k.jpg)
-**Median Filter**        |![]original.jpg)    |  ![](median.jpg)
-**hist**                 | ![](hist.jpg)
+**Median Filter** on 4k  |![](4k_original.jpg)|  ![](median_4k.jpg)
+**Median Filter**        |![](original.jpg)    |  ![](median.jpg)
+**hist**                 | |![](hist.jpg)
 
 ## Souces
 

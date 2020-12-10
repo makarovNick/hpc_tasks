@@ -23,8 +23,6 @@
 * Война и Мир (*)
 С помощью работы на нескольких процессах (MPI) найдите топ-10 встречающихся слов в романе «Война и Мир» Л.Н. Толстого
 
-![graph](plot.png)
-
 ## Sources
 
 * **rule101_mpi.c** - 101(Any) Rule cellural automata MPI implementation

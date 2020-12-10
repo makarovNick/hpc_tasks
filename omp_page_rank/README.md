@@ -1,10 +1,10 @@
 # PageRank OMP implementation
 
--- Generate random graphs and test $A^m$ counter of number of paths. Evaluate it within $log_2(m)$ matmul-s.
--- Generate small random (or select some graph and implement pagerank procedure. Compare with naive ranking.
+* Generate random graphs and test $A^m$ counter of number of paths. Evaluate it within $log_2(m)$ matmul-s.
+* Generate small random (or select some graph and implement pagerank procedure. Compare with naive ranking.
  Tip: Moscow subway graph is a nice example (but rather tiny). 
--- Try all tricks for evaluation of performance: optimization, blas, openmp, loops placing.
--- Science oriented guys can study SimRank.
+* Try all tricks for evaluation of performance: optimization, blas, openmp, loops placing.
+* Science oriented guys can study SimRank.
 
 ## Sources
 

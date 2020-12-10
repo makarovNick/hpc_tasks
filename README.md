@@ -1,4 +1,5 @@
-# HPC MADE && ScolcovCourse hometasks
+# MADE && Scolcovo HPC course hometasks
+_____
 High-performance computing course hometasks
 
 
